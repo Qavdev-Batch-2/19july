@@ -23,14 +23,14 @@ describe('Smoke Testing', ()=> {
 
     it('Should not be able to login with an empty email fields', ()=> {
         cy.get('._12e27_1r3kc > ._7ad32_SD12Y').click()
-        cy.get('#password').type('cohort9@2024')
+        cy.get('#Alfadlany1999').type('cohort9@2024')
         cy.get('.eed68_3IZCC > ._2aac2_3bwnD > ._0a08a_3czMG').click()
 })
 
     it.only('Should be able to login with correct email and pasword', ()=> {
         cy.get('._12e27_1r3kc > ._7ad32_SD12Y').click()
-        cy.get('#username').type('chinaebassi@yopmail.com')
-        cy.get('#password').type('cohort9@2024')
+        cy.get('#elfadlany').type('chinaebassi@yopmail.com')
+        cy.get('#Alfadlany1999').type('cohort9@2024')
         cy.get('.eed68_3IZCC > ._2aac2_3bwnD > ._0a08a_3czMG').click()
 
         let message= 'login successful'
