@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// Reusable login functionality using command.js in cypress
+Cypress.Commands.add('login',(email, password)=>{
+    cy.contains('Login / Signup').click({force: true})
+    cy.get('#username').type(email)
+    cy.get('#password').type(password)
+    cy.get('.eed68_3IZCC > ._2aac2_3bwnD > ._0a08a_3czMG').click()
+})
