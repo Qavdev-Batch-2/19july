@@ -33,14 +33,14 @@ describe('Smoke Testing', ()=> {
         cy.get('.eed68_3IZCC > ._2aac2_3bwnD > ._0a08a_3czMG').click()
 })
 
-    it.skip('Should not be able to login with an empty email fields', ()=> {
-        cy.contains('Login / Signup').click({force: true})
+    it('Should not be able to login with an empty email fields', ()=> {
+        cy.get('._12e27_1r3kc > ._7ad32_SD12Y').click()
         cy.get('#password').type('cohort9@2024')
         cy.get('.eed68_3IZCC > ._2aac2_3bwnD > ._0a08a_3czMG').click()
 })
 
-    it('Should be able to login with correct email and pasword', ()=> {
-        cy.contains('Login / Signup').click({force: true})
+    it.only('Should be able to login with correct email and pasword', ()=> {
+        cy.get('._12e27_1r3kc > ._7ad32_SD12Y').click()
         cy.get('#username').type('chinaebassi@yopmail.com')
         cy.get('#password').type('cohort9@2024')
         cy.get('.eed68_3IZCC > ._2aac2_3bwnD > ._0a08a_3czMG').click()
